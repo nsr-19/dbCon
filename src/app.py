@@ -126,7 +126,7 @@ if st.session_state.db_connected and st.session_state.databases:
             st.sidebar.error(f"Connection to {db_choice} failed: {str(e)}")
 
 # Main page
-st.title("SQL and Python Agent")
+st.title("SQLify")
 st.write("This agent can help you with SQL queries and Python code for data analysis. Configure your MySQL database connection using the sidebar.")
 
 if st.session_state.db_connected and st.session_state.db_config['DATABASE']:
